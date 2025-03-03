@@ -27,4 +27,4 @@ Connects to IB Gateway via `ibapi`, fetches live account summary and real-time P
    ```
 
 Logs will show connection steps, account-summary lines and PnL updates.
-<!-- updated: 2024-10-20-r01 -->
+<!-- updated: 2025-03-03-r01 -->
