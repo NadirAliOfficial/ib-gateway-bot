@@ -1,29 +1,42 @@
 
 # IB Gateway Python Integration
 
-Connects to IB Gateway via `ibapi`, fetches live account summary and real-time PnL updates.
+A minimal Python script that connects to Interactive Brokers Gateway (or TWS) via `ibapi`, fetches your live account summary and real-time PnL, and logs everything to the console.
 
-## Features
-- Fetch account summary: net liquidation, cash, margin requirements, available funds  
-- Subscribe to real-time PnL (daily, unrealized, realized)  
-- Console-logging of all requests, responses and errors  
+## 🚀 Features
 
-## Prerequisites
-- Python 3.10+  
-- IB Gateway or TWS running with API enabled (default port 7497)  
-- IB API package:  
-  ```bash
-  pip install ibapi
+- **Account Summary**: Net liquidation, cash balances, margin requirements, available funds  
+- **Real-Time PnL**: Daily, unrealized, and realized profit & loss updates  
+- **Detailed Logging**: Records all API requests, responses, and errors  
+
+## 🛠 Prerequisites
+
+- **Python 3.10+**  
+- **IB Gateway or TWS** running with API access enabled (default port `7497`)  
+
+Install the IB API client:
+
+```bash
+pip install ibapi
 ````
 
-## Getting Started
+## ▶️ Quick Start
 
-1. **Clone or download** this repo
-2. **Configure** your IB Gateway host/port/clientId in `bot.py` if needed
-3. **Run** the script:
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/NadirAliOffical/ib-gateway-bot.git
+   cd ib-gateway-bot
+   ```
+
+2. **Configure**
+   Open `bot.py` and update the `host`, `port`, and `clientId` values if necessary.
+
+3. **Run**
 
    ```bash
    python bot.py
    ```
 
-Logs will show connection steps, account-summary lines and PnL updates.
+
+
