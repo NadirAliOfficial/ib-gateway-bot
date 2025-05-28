@@ -14,7 +14,7 @@ Connects to IB Gateway via `ibapi`, fetches live account summary and real-time P
 - IB API package:  
   ```bash
   pip install ibapi
-````
+```
 
 ## Getting Started
 
