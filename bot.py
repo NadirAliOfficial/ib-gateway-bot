@@ -42,7 +42,7 @@ class EMARSITrader:
         self.ib.commissionReportEvent += self.on_commission_report
 
     def on_update_portfolio(self, item):
-        if (item.contract.symbol == self.contract.symbol and 
+        if (item.contract.symbol == self.contract.symbol and
             item.contract.currency == self.contract.currency):
             self.position = item.position
             logger.info(f"Portfolio update for {self.contract.symbol}: Position={self.position}, MarketPrice={item.marketPrice:.2f}, UnrealizedPNL={item.unrealizedPNL:.2f}")
